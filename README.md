@@ -1,2 +1,3 @@
-# mixter
-Mixin for prototype inheritance, accepts both objects and functions.
+# mixly
+
+Mixin for prototype inheritance, works with both objects and functions.
