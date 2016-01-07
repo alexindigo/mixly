@@ -17,8 +17,8 @@ function mixClone()
 {
   // keep original prototype for the last argument
   var args   = Array.prototype.slice.call(arguments)
-    , output = args.pop()
     , i      = args.length
+    , output = new Function()
     , target
     ;
 

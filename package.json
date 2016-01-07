@@ -1,13 +1,13 @@
 {
   "name": "mixly",
   "version": "1.0.0",
-  "description": "Mixin for prototype inheritance, works with both objects and functions.",
+  "description": "Mixins for prototype inheritance, works with both objects and functions.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint *.js test/*.js",
     "test": "nyc --reporter=lcov --reporter=text tape ./test/*.js",
     "posttest": "nyc check-coverage --lines 98 --functions 100 --branches 98",
-    "browser": "browserify test/compatability.js | ghostface | tap-set-exit"
+    "browser": "browserify test/*.js | ghostface | tap-set-exit"
   },
   "pre-commit": [
     "lint",

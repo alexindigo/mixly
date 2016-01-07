@@ -1,5 +1,5 @@
 // Public API
-module.export = mixChain;
+module.exports = mixChain;
 
 /**
  * Modifies prototype chain for the provided objects,
