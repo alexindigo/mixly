@@ -73,7 +73,7 @@ function copyFunction(original)
  *
  * @param   {function} target - Function (class) to update
  * @param   {function} super_ - Superclass to be a donor
- * @returns {function} – augmented target function
+ * @returns {function} – augmented target function
  */
 function addSuper(target, super_)
 {
