@@ -1,6 +1,6 @@
 {
   "name": "mixly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mixins for prototype inheritance, works with both objects and functions.",
   "main": "index.js",
   "scripts": {
