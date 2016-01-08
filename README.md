@@ -1,6 +1,6 @@
 # mixly [![NPM Module](https://img.shields.io/npm/v/mixly.svg?style=flat)](https://www.npmjs.com/package/mixly)
 
-Mixins for <img src="https://img.shields.io/travis/alexindigo/deeply/master.svg?label=browser&style=flat" alt="GGg" ismap> prototype inheritance, works with both objects and functions.
+Mixins for prototype inheritance, works with both objects and functions.
 
 [![PhantomJS Build](https://img.shields.io/travis/alexindigo/mixly/master.svg?label=browser&style=flat)](https://travis-ci.org/alexindigo/mixly)
 [![Linux Build](https://img.shields.io/travis/alexindigo/mixly/master.svg?label=linux:0.10-5.x&style=flat)](https://travis-ci.org/alexindigo/mixly)
@@ -18,3 +18,5 @@ $ npm install mixly --save
 ```
 
 ## Examples
+
+TBW. Meanwhile please check [test/](test/) folder.
