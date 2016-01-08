@@ -1,6 +1,8 @@
-var chain   = require('./chain.js')
+var copy    = require('./copy.js')
+  , chain   = require('./chain.js')
   , clone   = require('./clone.js')
   , extend  = require('./extend.js')
+  , append  = require('./append.js')
   , inherit = require('./inherit.js')
   ;
 
@@ -9,7 +11,9 @@ var chain   = require('./chain.js')
 // use clone (property copying) mixin by default
 module.exports = clone;
 // expose everything with explicit names
+module.exports.copy    = copy;
 module.exports.chain   = chain;
 module.exports.clone   = clone;
 module.exports.extend  = extend;
+module.exports.append  = append;
 module.exports.inherit = inherit;

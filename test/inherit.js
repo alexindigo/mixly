@@ -4,6 +4,8 @@ var test = require('tape')
 
 /**
  * Test child function
+ *
+ * @param {object} t - test suite
  */
 function Child(t)
 {

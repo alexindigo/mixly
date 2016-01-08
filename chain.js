@@ -14,7 +14,7 @@ function mixChain()
     , i    = args.length
     ;
 
-  while (--i)
+  while (--i > 0)
   {
     args[i-1].__proto__ = args[i];
   }
