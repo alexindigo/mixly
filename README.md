@@ -1,4 +1,4 @@
-# mixly [![NPM Module](https://img.shields.io/npm/v/mixly.svg?style=flat)](https://www.npmjs.com/package/mixly)
+# mixly <!-- [![NPM Module](https://img.shields.io/npm/v/mixly.svg?style=flat)](https://www.npmjs.com/package/mixly) -->
 
 Mixins for prototype inheritance, works with both objects and functions.
 
@@ -19,4 +19,6 @@ $ npm install mixly --save
 
 ## Examples
 
-TBW. Meanwhile please check [test/](test/) folder.
+TBW.
+
+Meanwhile please check [test/](test/) folder.

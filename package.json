@@ -11,7 +11,8 @@
   },
   "pre-commit": [
     "lint",
-    "test"
+    "test",
+    "browser"
   ],
   "engines": {
     "node": ">= 0.10"
