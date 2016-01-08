@@ -16,6 +16,5 @@ install:
 test_script:
   - node --version
   - npm --version
-  - npm run lint
   - npm run test
 build: off
