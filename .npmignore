@@ -1,12 +1,13 @@
 .editorconfig
 .eslint
+.gitignore
 .istanbul.yml
 .travis.yml
+appveyor.yml
 
 *.log
 
 .nyc_output/
 coverage/
 node_modules/
-
-test.js
+test/
