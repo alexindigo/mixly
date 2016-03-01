@@ -34,14 +34,14 @@ var o3 = Object.create({}, {
 });
 
 
-test('append', function(t)
+test('immutable', function(t)
 {
   // o1 + o2 + o3
-  var oX = mixly.append(o1, o2, o3);
+  var oX = mixly.immutable(o1, o2, o3);
 
-  t.equal(oX, o1, 'should return same instance as first (modified) argument');
+  t.notEqual(oX, o1, 'should return new object, leaving first argument unmodified');
 
-  t.equal(Object.getPrototypeOf(oX), o0, 'returned object should keep original prototype');
+  t.equal(Object.getPrototypeOf(oX), Object.prototype, 'returned object should have default prototype');
   t.equal(Object.getPrototypeOf(o1), o0, 'first argument should keep original prototype');
   t.equal(Object.getPrototypeOf(o2), null, 'second argument should keep original prototype');
   t.equal(Object.getPrototypeOf(Object.getPrototypeOf(o3)), Object.prototype, 'third argument should keep original prototype');
@@ -52,14 +52,14 @@ test('append', function(t)
   t.equal(oX.commonThing, 'o3', 'should have shared property of the last object in the chain');
 
   t.true(oX.hasOwnProperty('commonThing'), 'returned object should have appended `commonThing` property as own');
-  t.true(oX.hasOwnProperty('O1'), 'returned object should have appended `O1` property as own');
-  t.true(oX.hasOwnProperty('O2'), 'returned object should have appended `O2` property as own');
-  t.true(oX.hasOwnProperty('O3'), 'returned object should have appended `O3` property as own');
+  t.true(oX.hasOwnProperty('O1'), 'returned object should have appended property `O1` as own');
+  t.true(oX.hasOwnProperty('O2'), 'returned object should have appended property `O2` as own');
+  t.true(oX.hasOwnProperty('O3'), 'returned object should have appended property `O3` as own');
 
-  t.true(o1.hasOwnProperty('commonThing'), 'modified object should have appended `commonThing` property as own');
-  t.true(o1.hasOwnProperty('O1'), 'modified object should have appended `O1` property as own');
-  t.true(o1.hasOwnProperty('O2'), 'modified object should have appended `O2` property as own');
-  t.true(o1.hasOwnProperty('O3'), 'modified object should have appended `O3` property as own');
+  t.true(o1.hasOwnProperty('commonThing'), 'first argument should keep property `commonThing` as own');
+  t.true(o1.hasOwnProperty('O1'), 'first argument should keep property `O1` as own');
+  t.false(o1.hasOwnProperty('O2'), 'first argument should not have appended property `O2` as own');
+  t.false(o1.hasOwnProperty('O3'), 'first argument should not have appended property `O3` as own');
 
   // o2 wasn't modified
   t.false(o2.O1, 'should not have property from the preceding object in the chain');

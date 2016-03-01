@@ -1,4 +1,4 @@
-var copy  = require('./copy.js');
+var copy = require('./copy.js');
 
 // Public API
 module.exports = mixAppend;
