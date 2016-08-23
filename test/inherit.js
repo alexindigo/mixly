@@ -40,6 +40,8 @@ function assert(t, obj)
 
 test('inherit', function(t)
 {
+  t.plan(12);
+
   var child;
 
   mixly.inherit(Child, Parent);
@@ -47,6 +49,4 @@ test('inherit', function(t)
   child = new Child(t);
 
   assert(t, child);
-
-  t.end();
 });

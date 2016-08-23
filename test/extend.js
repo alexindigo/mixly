@@ -31,7 +31,10 @@ F2.static0 = 'f2';
 
 test('extend', function(t)
 {
+  t.plan(21);
+
   var child;
+
   mixly.extend(F1, F2);
 
   F1.prototype.f1p2 = true;
@@ -69,6 +72,4 @@ test('extend', function(t)
   t.true(F1.static2);
   // and proto is available too
   t.equal(Object.getPrototypeOf(F1).static0, 'f2');
-
-  t.end();
 });

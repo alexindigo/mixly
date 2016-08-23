@@ -31,10 +31,12 @@ function F3()
 F3.prototype.f3p = true;
 
 
-test('clone', function(t)
+test('funky', function(t)
 {
+  t.plan(26);
+
   var child;
-  var F0 = mixly.clone(F1, F2, F3);
+  var F0 = mixly.funky(F1, F2, F3);
 
   child = new F0();
 
@@ -76,6 +78,4 @@ test('clone', function(t)
   t.false(F2.prototype.abc);
   t.false(F1.prototype.abc);
   t.true(child.abc);
-
-  t.end();
 });

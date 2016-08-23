@@ -1,14 +1,8 @@
-.editorconfig
-.eslintrc
-.npmignore
-.gitignore
-.istanbul.yml
-.travis.yml
 appveyor.yml
 
+.*
 *.log
 
-.nyc_output/
 coverage/
 node_modules/
 test/

@@ -12,6 +12,8 @@ module.exports = mixExtend;
  * as `__proto__` of the target class,
  * allowing "static" methods inheritance.
  *
+ * Note: *Destroys target's prototype*
+ * 
  * @param   {function} target - Function (class) to update prototype on
  * @param   {function} super_ - Superclass to be prototype donor
  * @returns {function} - augmented function (class)

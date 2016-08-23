@@ -36,6 +36,8 @@ var o3 = Object.create(o0, {
 
 test('copy', function(t)
 {
+  t.plan(16);
+
   // o1 + o2
   mixly.copy(o1, o2);
 
@@ -63,6 +65,4 @@ test('copy', function(t)
   t.true(Object.prototype.hasOwnProperty.call(o2, 'commonThing'));
   t.true(Object.prototype.hasOwnProperty.call(o2, 'O2'));
   t.true(Object.prototype.hasOwnProperty.call(o2, 'O3'));
-
-  t.end();
 });

@@ -4,7 +4,7 @@ var append = require('./append.js');
 module.exports = mixImmutable;
 
 /**
- * Creates immutable (shallow) copy of the provided properties
+ * Creates immutable (shallow) copy of the provided objects
  *
  * @param   {...object} from - object(s) to merge with
  * @returns {object} mixed result new object

@@ -4,10 +4,9 @@ module.exports = mixCopy;
 /**
  * Copies (shallow) own properties between provided objects
  *
- * @private
- * @param   {function} to - source object to copy properties to
- * @param   {function} from - source object to copy properties from
- * @returns {function} – augmented function
+ * @param   {object} to - source object to copy properties to
+ * @param   {object} from - source object to copy properties from
+ * @returns {object} – augmented `to` object
  */
 function mixCopy(to, from)
 {

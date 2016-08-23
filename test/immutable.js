@@ -36,6 +36,8 @@ var o3 = Object.create({}, {
 
 test('immutable', function(t)
 {
+  t.plan(25);
+
   // o1 + o2 + o3
   var oX = mixly.immutable(o1, o2, o3);
 
@@ -71,6 +73,4 @@ test('immutable', function(t)
   t.false(Object.prototype.hasOwnProperty.call(o2, 'O1'), 'should not have `O1` as own property');
   t.true(Object.prototype.hasOwnProperty.call(o2, 'O2'), 'should have `O2` as own property');
   t.false(Object.prototype.hasOwnProperty.call(o2, 'O3'), 'should not have `O3` as own property');
-
-  t.end();
 });

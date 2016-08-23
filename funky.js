@@ -1,19 +1,18 @@
-var chain = require('./chain.js')
-  , copy  = require('./copy.js')
+var fulcon = require('fulcon')
+  , chain  = require('./chain.js')
+  , copy   = require('./copy.js')
   ;
 
 // Public API
 module.exports = mixClone;
 
 /**
- * Creates prototype chain with the properties
- * from the provided objects, by (shallow) copying
- * own properties from each object onto respective
- * element in the chain
+ * Creates prototype chain from the provided functions,
+ * by (shallow) copying prototypes from each function
+ * onto respective elements in the chain
  *
- * @private
- * @param   {...object} from - object(s) to mix in with
- * @returns {object} new object with mixed in properties
+ * @param   {...function} from - object(s) to mix in with
+ * @returns {function} - new object with mixed in properties
  */
 function mixClone()
 {
@@ -40,16 +39,17 @@ function mixClone()
 
 /**
  * Creates function that executes provided function
+ * with all the properties and prototype properties
+ * (shallow copy)
  *
+ * @private
  * @param   {function} original - function to copy
  * @returns {function} - copied function
  */
 function copyFunction(original)
 {
-  var target = function()
-  {
-    return original.apply(this, arguments);
-  };
+  // clone original function
+  var target = fulcon(original);
 
   // copy it's "static" methods
   copy(target, original);
@@ -71,6 +71,7 @@ function copyFunction(original)
  * Adds reference to the superclass
  * and it's prototype as a `__proto__`.
  *
+ * @private
  * @param   {function} target - Function (class) to update
  * @param   {function} super_ - Superclass to be a donor
  * @returns {function} – augmented target function

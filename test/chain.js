@@ -29,6 +29,8 @@ var o3 = {
 
 test('chain', function(t)
 {
+  t.plan(26);
+
   mixly.chain(o1, o2, o3);
 
   t.equal(Object.getPrototypeOf(o1), o2);
@@ -66,6 +68,4 @@ test('chain', function(t)
   t.false(Object.getPrototypeOf(Object.getPrototypeOf(o1)).hasOwnProperty('O1'));
   t.false(Object.getPrototypeOf(Object.getPrototypeOf(o1)).hasOwnProperty('O2'));
   t.true(Object.getPrototypeOf(Object.getPrototypeOf(o1)).hasOwnProperty('O3'));
-
-  t.end();
 });

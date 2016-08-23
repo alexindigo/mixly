@@ -8,7 +8,7 @@ module.exports = mixAppend;
  *
  * @param   {object} to - object to merge into
  * @param   {...object} from - object(s) to merge with
- * @returns {object} mixed result object
+ * @returns {object} - mixed result object
  */
 function mixAppend(to)
 {

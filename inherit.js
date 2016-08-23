@@ -6,7 +6,7 @@ module.exports = mixInherit;
  * compatible with node's builtin version, but browser-friendly
  * (without browserify magic, i.e. works with other packagers)
  *
- * *Destroys target's prototype*
+ * Note: *Destroys target's prototype*
  *
  * @param   {function} target - Function (class) to update prototype on
  * @param   {function} super_ - Superclass to be prototype donor
