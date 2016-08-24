@@ -11,6 +11,7 @@
     "browser": "browserify -t browserify-istanbul test/*.js | obake --coverage | tap-spec",
     "report": "istanbul report lcov",
     "size": "browserify index.js | size-table mixly",
+    "toc": "toc-md README.md",
     "files": "pkgfiles --sort=name"
   },
   "pre-commit": [
@@ -19,7 +20,8 @@
     "cover",
     "browser",
     "report",
-    "size"
+    "size",
+    "toc"
   ],
   "engines": {
     "node": ">= 0.10"
@@ -56,7 +58,8 @@
     "rimraf": "^2.5.4",
     "size-table": "^0.2.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
+    "tape": "^4.6.0",
+    "toc-md": "^0.2.0"
   },
   "dependencies": {
     "fulcon": "^1.0.1"

@@ -18,9 +18,28 @@ Collection of mixin tools for objects and functions.
 | mixly.min.js.gz |   964 B |
 
 
+## Table of Contents
+
+<!-- TOC -->
+- [Install](#install)
+- [API](#api)
+  - [mixly](#mixly)
+  - [append](#append)
+  - [chain](#chain)
+  - [copy](#copy)
+  - [extend](#extend)
+  - [funky](#funky)
+  - [immutable](#immutable)
+  - [inherit](#inherit)
+- [License](#license)
+
+<!-- TOC END -->
+
 ## Install
 
-    $ npm install --save mixly
+```shell
+$ npm install --save mixly
+```
 
 ## API
 
@@ -307,10 +326,6 @@ assert.strictEqual(child instanceof Parent, true, 'child instance of Parent');
 ```
 
 More details in [test/inherit.js](test/inherit.js) test file.
-
-## Want to Know More?
-
-Open an [issue](https://github.com/alexindigo/mixly/issues) with questions and/or suggestions.
 
 ## License
 
