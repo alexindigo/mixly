@@ -1,6 +1,6 @@
 {
   "name": "mixly",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Collection of mixin tools for objects and functions",
   "main": "index.js",
   "scripts": {
