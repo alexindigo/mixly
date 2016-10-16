@@ -62,6 +62,6 @@
     "toc-md": "^0.2.0"
   },
   "dependencies": {
-    "fulcon": "^1.0.1"
+    "fulcon": "^1.0.2"
   }
 }
