@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/alexindigo/mixly#readme",
   "devDependencies": {
-    "browserify": "^13.1.0",
+    "browserify": "^13.3.0",
     "browserify-istanbul": "^2.0.0",
     "coveralls": "^2.11.12",
     "eslint": "^2.13.1",
